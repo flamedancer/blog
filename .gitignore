@@ -103,3 +103,4 @@ ENV/
 # jekyll
 /_site
 .sass-cache
+/Gemfile.lock
