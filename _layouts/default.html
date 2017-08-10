@@ -14,7 +14,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h1>{{ site.title | default: site.github.repository_name }}<a href="{{ site.baseurl }}/target/">.</a></h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% for category in site.categories %}
