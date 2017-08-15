@@ -21,11 +21,10 @@
         <h2>{{ category | first }}</h2>
         <ol >
             {% for post in category.last %}
-                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                <li style="float: none"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ol>
         {% endfor %}
-
 
       </header>
       <section>
