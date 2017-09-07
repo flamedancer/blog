@@ -18,10 +18,10 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% for category in site.categories %}
-        <h2>{{ category | first }}</h2>
+        <h3>{{ category | first }}</h3>
         <ol >
             {% for post in category.last %}
-                <li style="float: none"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                <li style="float: none;border-style: none; "><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ol>
         {% endfor %}
